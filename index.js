@@ -1,4 +1,5 @@
-const Discord = require("discord.js");
+const Discord = require(.vscode/node_modules/Discord.jsdiscord.js");
+                       
 const { emitKeypressEvents } = require("readline");
 
 const Client = new  Discord.Client ();
