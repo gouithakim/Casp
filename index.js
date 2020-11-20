@@ -2,6 +2,7 @@ const Discord = require("discord.js");
 const { emitKeypressEvents } = require("readline");
 
 const Client = new  Discord.Client ();
+const token = process.env.token;
 
 const prefix = "!"
 
@@ -143,4 +144,4 @@ Client.on("guildMemberRemove", member => {
     member.guild.channels.cache.find(channel => channel.id === "779098227299057664").send(member.displayName + "Nous a malheureusement quitté :'(")
 });
 
-Client.login("Nzc4NjY3NTQxOTQ0OTkxODE2.X7VUqA.b9yWNT1LpXD4PsuMQY1TR7qZ0vE");
+Client.login("token");
